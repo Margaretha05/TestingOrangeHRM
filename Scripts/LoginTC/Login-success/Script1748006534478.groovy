@@ -19,8 +19,6 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 
-WebUI.verifyElementText(findTestObject('null'), 'Login')
-
 WebUI.setText(findTestObject('LoginObject/input_Username_username'), 'Admin')
 
 WebUI.setText(findTestObject('LoginObject/input_Password_password'), 'admin123')
@@ -28,4 +26,6 @@ WebUI.setText(findTestObject('LoginObject/input_Password_password'), 'admin123')
 WebUI.click(findTestObject('LoginObject/button_Login'))
 
 WebUI.verifyElementText(findTestObject('LoginObject/h6_Dashboard'), 'Dashboard')
+
+WebUI.closeBrowser()
 
