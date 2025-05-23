@@ -19,13 +19,13 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 
-WebUI.verifyElementText(findTestObject('login/Page_OrangeHRM/h5_Login'), 'Login')
+WebUI.verifyElementText(findTestObject('null'), 'Login')
 
-WebUI.setText(findTestObject('login/Page_OrangeHRM/Page_OrangeHRM/input_Username_username'), 'Admin')
+WebUI.setText(findTestObject('Login_OrangeHRM/input_Username_username'), 'Admin')
 
-WebUI.setText(findTestObject('login/Page_OrangeHRM/Page_OrangeHRM/input_Password_password'), 'admin123')
+WebUI.setText(findTestObject('Login_OrangeHRM/input_Password_password'), 'admin123')
 
-WebUI.click(findTestObject('login/Page_OrangeHRM/button_Login'))
+WebUI.click(findTestObject('Login_OrangeHRM/button_Login'))
 
-WebUI.verifyElementText(findTestObject('login/Page_OrangeHRM/Page_OrangeHRM/h6_Dashboard'), 'Dashboard')
+WebUI.verifyElementText(findTestObject('Login_OrangeHRM/h6_Dashboard'), 'Dashboard')
 
